@@ -1,0 +1,21 @@
+This is C++ software and will need little more than cmake makee and the g++ compiler
+
+
+If you're on raspbian make sure you're compilered up with:
+sudo apt-get install build-essential
+
+If you're on fedora you probably want more like
+sudo dnf install gcc-c++ make cmake
+
+Anyway, in this directory
+
+1. cmake CMakeLists.txt
+
+2. make
+
+3. sudo make install
+
+Hurrah, now you've got jfyspot installed and ready to go!
+
+jfyspot -help might be handy...
+
