@@ -1,8 +1,8 @@
 # jfyspot
-This project was started because I have a SMA inverter and use SBFspot to pump data into 123solar ( https://www.123solar.org/ ).
-I installed additional panels and a JFY JSI-3000 inverter ( http://www.jfy-tech.com/ ) and struggled to find software to extract data nevermind pop it into 123solar...
+This project was started because I have a SMA inverter and use SBFspot to pump data into 123solar https://www.123solar.org/
+I installed additional panels and a JFY JSI-3000 inverter http://www.jfy-tech.com/ and struggled to find software to extract data nevermind pop it into 123solar...
 
-I found solarmonj ( https://github.com/jcroucher/solarmonj ) to be the nearest thing to what I was after so after some cut'n'shut work, here we are.
+I found solarmonj https://github.com/jcroucher/solarmonj to be the nearest thing to what I was after so after some cut'n'shut work, here we are.
 
 Yes it runs on linux, no it dosn't run on windows, yes it runs on Raspberry Pi.
 
@@ -19,12 +19,13 @@ To run this project you will need:
 
 In order to build this project you will need:
 
+* cmake
 * make
 * g++
 
 ### Setup
 
-* ./configure
+* cmake CMakeLists.txt
 * make
 * make install
 * jfyspot --help
