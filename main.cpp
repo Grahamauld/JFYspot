@@ -215,7 +215,13 @@ float	energyToday=0;
 				}
 				//use the actual total as energy today (because we probably went to >0)
 				//mmm, but we were on 0.04 when it reset... let's add the new value
-				energyToday+=data.energyToday;
+				//energyToday+=data.energyToday;
+				//that produces a little bump on every inverter reset which makes me presume that actually
+                                //on reset it probably hops to the correct value for the day so really we just set to the day value
+                                energyToday=data.energyToday;
+                                //if this is correct then after this happens we should always just use the provided figure
+                                //that would require some note that the daily reset has occurred though, probably easier
+                                //to stick with tracking changes
 			} else {
 				//normally we just add when there's a difference
 				energyToday+=data.energyToday-prevetot;
